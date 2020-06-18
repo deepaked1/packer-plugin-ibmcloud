@@ -81,9 +81,9 @@ func (self *stepCreateInstance) Cleanup(state multistep.StateBag) {
 	}
 
 	ui.Say("Destroying instance...")
-	err = client.DestroyInstance(self.instanceId)
-	if err != nil {
-		log.Printf("Error destroying instance: %v", err.Error())
-		ui.Error(fmt.Sprintf("Error cleaning up the instance. Please delete the instance (%s) manually", self.instanceId))
-	}
+//	err = client.DestroyInstance(self.instanceId)
+//	if err != nil {
+//		log.Printf("Error destroying instance: %v", err.Error())
+//		ui.Error(fmt.Sprintf("Error cleaning up the instance. Please delete the instance (%s) manually", self.instanceId))
+//	}
 }
